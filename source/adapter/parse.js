@@ -45,6 +45,7 @@ function processDirectoryResult(dirPath, dirResult, targetOnly) {
                 })
                 .length;
         // console.log(JSON.stringify(props, undefined, 4));
+        dirPath = decodeURIComponent(dirPath)
         var filename = processDirectoryResultFilename(
                 dirPath,
                 sanitisedFilePath       
